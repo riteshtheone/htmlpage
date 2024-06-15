@@ -1,0 +1,31 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+#root {
+    display: flex;
+    height: 100vh;
+}
+
+#root > div {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#root > div:nth-child(1) {
+    background-color: #3498db;
+}
+
+#root > div:nth-child(2) {
+    background-color: #444444;
+}
+
+button {
+    width: 100px;
+    height: 100px;
+    margin: 8px;
+}

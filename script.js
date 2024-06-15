@@ -1,4 +1,3 @@
-const url = window.location.origin
 const rolli = () => {
     fetch(`${url}/action?q=ri`)
         .then(response => {

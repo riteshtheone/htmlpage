@@ -29,3 +29,9 @@ button {
     height: 100px;
     margin: 8px;
 }
+
+@media (width <= 600px) {
+    #root {
+        transform: rotate(90deg);
+    }
+}

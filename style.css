@@ -5,7 +5,7 @@ body {
 
 #root {
     display: flex;
-    height: 100vh;
+    height: 100dvh;
 }
 
 #root > div {
@@ -28,10 +28,4 @@ button {
     width: 100px;
     height: 100px;
     margin: 8px;
-}
-
-@media (width <= 600px) {
-    #root {
-        transform: rotate(90deg);
-    }
 }

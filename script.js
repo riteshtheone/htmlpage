@@ -1,3 +1,12 @@
+const showToast = (message) => {
+    const toast = document.getElementById('toast');
+    toast.textContent = message;
+    toast.classList.add('show');
+    setTimeout(() => {
+        toast.classList.remove('show');
+    }, 800);
+};
+
 const rolli = () => {
     fetch(`${url}/action?q=ri`)
         .then(response => {
@@ -7,6 +16,7 @@ const rolli = () => {
             return response.text();
         })
         .then(data => {
+            showToast(`event: ${data}`)
             console.log('Response:', data);
         })
         .catch(error => {
@@ -22,6 +32,7 @@ const rolld = () => {
             return response.text();
         })
         .then(data => {
+            showToast(`event: ${data}`)
             console.log('Response:', data);
         })
         .catch(error => {
@@ -37,6 +48,7 @@ const pitchi = () => {
             return response.text();
         })
         .then(data => {
+            showToast(`event: ${data}`)
             console.log('Response:', data);
         })
         .catch(error => {
@@ -52,6 +64,7 @@ const pitchd = () => {
             return response.text();
         })
         .then(data => {
+            showToast(`event: ${data}`)
             console.log('Response:', data);
         })
         .catch(error => {
@@ -67,6 +80,7 @@ const yawi = () => {
             return response.text();
         })
         .then(data => {
+            showToast(`event: ${data}`)
             console.log('Response:', data);
         })
         .catch(error => {
@@ -82,6 +96,7 @@ const yawd = () => {
             return response.text();
         })
         .then(data => {
+            showToast(`event: ${data}`)
             console.log('Response:', data);
         })
         .catch(error => {
@@ -98,6 +113,7 @@ const reset1 = () => {
             return response.text();
         })
         .then(data => {
+            showToast(`event: ${data}`)
             console.log('Response:', data);
         })
         .catch(error => {
@@ -113,6 +129,7 @@ const reset2 = () => {
             return response.text();
         })
         .then(data => {
+            showToast(`event: ${data}`)
             console.log('Response:', data);
         })
         .catch(error => {

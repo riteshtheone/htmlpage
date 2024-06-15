@@ -6,6 +6,7 @@ body {
 #root {
     display: flex;
     height: 100vh;
+    transform: rotate(90deg);
 }
 
 #root > div {
